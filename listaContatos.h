@@ -14,6 +14,7 @@ Lista *criaLista();
 
 int listaCheia(Lista *li);
 int listaVazia(Lista *li);
+int tamanhoLista(Lista *li);
 
 void coletaDados(int escolha, Lista *li);
 
@@ -22,8 +23,7 @@ int insere_lista_ordenada(Lista *li, CLIENTE cl);
 
 void formatInputChar(int tamanho, bool x, void *input);
 
-void buscaClienteCodigo(Lista *li);
+void consultaClienteCodigo(Lista *li);
 int consulta_lista_cod(Lista *li, int cod, CLIENTE *cl);
 
-void buscaClienteNome(Lista *li);
-int consulta_lista_nome(Lista *li, char nome[60], CLIENTE *cl);
+void consulta_lista_nome(Lista *li);

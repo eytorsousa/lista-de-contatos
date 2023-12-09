@@ -9,23 +9,19 @@ int main(){
     Lista *li;
     li = criaLista();
     int escolha;
+    char n1[] = "eytor";
 
     do{
-        printf("\n[-------------------- MENU --------------------]\n");
+        printf("\n[-------------------- MENU --------------------]\n\n");
         printf("[1] - Inserir novo cliente\n\n");
-
         printf("[2] - Buscar cliente por CODIGO\n");
         printf("[3] - Buscar cliente por NOME\n\n");
-
         printf("[4] - Gerar relatorio - Lista Completa\n\n");
-
         printf("[5] - Editar cliente\n\n");
-
         printf("[6] - Remover cliente\n\n");
-
         printf("[0] - ENCERRAR PROGRAMA");
-        printf("\n[----------------------------------------------]\n");
-        printf("\nInsira o numero da operacao: ");
+        printf("\n\n[----------------------------------------------]\n\n");
+        printf("Insira o numero da operacao: ");
         scanf(" %d", &escolha);
 
         if(escolha < 0 || escolha > 6){
