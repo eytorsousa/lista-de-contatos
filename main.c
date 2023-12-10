@@ -9,12 +9,11 @@ int main(){
     Lista *li;
     li = criaLista();
     int escolha;
-    char n1[] = "eytor";
 
     do{
         printf("\n[-------------------- MENU --------------------]\n\n");
         printf("[1] - Inserir novo cliente\n\n");
-        printf("[2] - Buscar cliente por CODIGO\n");
+        printf("[2] - Buscar cliente por CODIGO\n\n");
         printf("[3] - Buscar cliente por NOME\n\n");
         printf("[4] - Gerar relatorio - Lista Completa\n\n");
         printf("[5] - Editar cliente\n\n");
@@ -35,7 +34,6 @@ int main(){
             coletaDados(escolha, li);
         }
     } while(escolha != 0);
-    //apagaLista(li);
 
     printf("\n\n\tFIM DO PROGRAMA!\n");
     system("pause");

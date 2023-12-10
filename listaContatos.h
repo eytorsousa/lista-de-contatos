@@ -18,12 +18,19 @@ int tamanhoLista(Lista *li);
 
 void coletaDados(int escolha, Lista *li);
 
-void insereCliente(Lista *li);
+void insereCliente(Lista *li, char contatos[]);
 int insere_lista_ordenada(Lista *li, CLIENTE cl);
 
 void formatInputChar(int tamanho, bool x, void *input);
 
-void consultaClienteCodigo(Lista *li);
+void consultaClienteCodigo(Lista *li, char contatos[]);
 int consulta_lista_cod(Lista *li, int cod, CLIENTE *cl);
 
-void consulta_lista_nome(Lista *li);
+void consulta_lista_nome(Lista *li, char contatos[]);
+
+void consulta_lista(Lista *li, char contatos[]);
+void editaClienteCodigo(Lista *li, char contatos[]);
+void removeClienteCodigo(Lista *li, char contatos[]);
+
+
+
